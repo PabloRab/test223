@@ -1,0 +1,116 @@
+ul{
+    list-style: none;
+}
+.center{
+    width: 300px;
+    height: 400px;
+    background-color: brown;
+    background-image: url(./cat.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.left{
+    width: 400px;
+    height: 300px;
+    background-color: brown;
+    background-image: url(./cat.jpg);
+    background-size: 75px;
+    background-repeat: repeat-y;
+    background-position: left;
+    margin-bottom: 30px;
+}
+
+.bottom{
+    width: 400px;
+    height: 300px;
+    background-color: brown;
+    background-image: url(./cat.jpg);
+    background-size: 75px;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    margin-bottom: 30px;
+}
+
+.full{
+    width: 400px;
+    height: 300px;
+    background-color: brown;
+    background-image: url(./cat.jpg);
+    background-size: 75px;
+    margin-bottom: 30px;
+}
+
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    margin: 10px;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+.item::before{
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url(./cat.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item:nth-child(2)::before{
+    background-image: url(./cat.jpg);
+}
+.item:nth-child(3)::before{
+    background-image: url(./cat.jpg);
+}
+.item:nth-child(4)::before{
+    background-image: url(./cat.jpg);
+}
+
+
+.buttom{
+    background-color: burlywood;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buttom:hover{
+    box-shadow: 4px 4px 3px gray;
+}
+
+.buttom::before{
+    content: "";
+    display: block;
+    background-image: url(./cat.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.bg{
+    max-width: 1600px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.2)), url(./cat2img.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
